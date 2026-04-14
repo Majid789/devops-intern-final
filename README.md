@@ -1,5 +1,8 @@
 # devops-intern-final
+![CI Status](https://github.com/Majid789/devops-intern-final/actions/workflows/ci.yml/badge.svg)
 
+
+## Step 1: Github Setup
 Name: Majad Iqbal Ahmad
 
 Date: 14/04/2026
