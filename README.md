@@ -61,3 +61,13 @@ Implemented a Continuous Integration (CI) pipeline to automate code testing
 2. Navigate to the project root and execute:
 	``` bash
 	nomad job run nomad/gello.nomad
+## Step 6: Monitoring with Grafana Loki
+
+I implemented log aggreggation using the grafana Loki
+### Setup Overview
+-**Loki:** Install voa Docker to act as the centralized log repository.
+-**Grafana:** Connected to Loki as a data source for log visualization.
+=**Log Forwarding:** COnfigured the docker engine to forward cntainer logs directly to Loki API.
+
+### Viewing Logs:
+`{container_name="devops-hello"}`
