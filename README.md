@@ -47,3 +47,17 @@ Implemented a Continuous Integration (CI) pipeline to automate code testing
 - **Steps:** 1. Checks out the repository code.
 	2. Set up Python 3.11 environment.
 	3. Executes `hello.py` to ensure the script is functional.
+
+## Step 5: Job Deployment with Nomad
+
+### Job Configuration:
+- ** Job Name:** `hello-devops`
+- **Typr:** `service`
+- **Resources:** Minimal footprint (100 CPU/ 64MB RAM).
+- **Driver:** `docker`
+
+### How to Run:
+1. Ensure a Nomad agent is running (for local testing, use `nomad agent -dev`).
+2. Navigate to the project root and execute:
+	``` bash
+	nomad job run nomad/gello.nomad
